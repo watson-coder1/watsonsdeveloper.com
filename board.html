@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the leadership team of WatsonsDevelopers.">
+    <meta name="keywords" content="board, leadership, WatsonsDevelopers, CEO, co-founders, CFO">
+    <meta name="author" content="WatsonsDevelopers">
+    <title>Board - WatsonsDevelopers Group</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 20px;
+            color: white;
+        }
+
+        header .logo img {
+            width: 120px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        /* Hero section */
+        .board {
+            padding: 50px 20px;
+            background: linear-gradient(to bottom, #ffffff, #f1f1f1);
+            text-align: center;
+        }
+
+        .board h1 {
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .board p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: #555;
+        }
+
+        /* Board member section */
+        .board-member {
+            display: inline-block;
+            text-align: left;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            width: 250px;
+            transition: transform 0.3s ease;
+        }
+
+        .board-member img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .board-member h2 {
+            font-size: 1.5rem;
+            color: #007bff;
+        }
+
+        .board-member h3 {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .board-member p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .board-member ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .board-member ul li {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: #333;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .board-member ul li:before {
+            content: "✔";
+            color: #007bff;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .board-member:hover {
+            transform: scale(1.05);
+        }
+
+        /* Founding story section */
+        .founding-story {
+            background-color: #007bff;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .founding-story h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .founding-story p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Investments Section */
+        .investments {
+            padding: 50px 20px;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+
+        .investments h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .investment-item {
+            display: inline-block;
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .investment-item:hover {
+            transform: scale(1.05);
+        }
+
+        .investment-item p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .investment-item h4 {
+            font-size: 1.2rem;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        /* CSR Section */
+        .csr {
+            padding: 50px 20px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        .csr h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .csr-content {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #444;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .csr-content p {
+            font-size: 1.2rem;
+            color: #ddd;
+            line-height: 1.8;
+        }
+
+        /* Reports Section */
+        .reports {
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .reports h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .reports-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .report-item {
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .report-item img {
+            width: 100%;
+            display: block;
+        }
+
+        .report-item:hover {
+            transform: scale(1.05);
+        }
+
+        .report-item h3 {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        /* Management and Governance Section */
+        .management {
+            padding: 50px 20px;
+            background-color: #e0e0e0;
+        }
+
+        .management h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .management-item {
+            margin-bottom: 20px;
+        }
+
+        .management-item h4 {
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            margin: 0;
+            border-radius: 5px;
+        }
+
+        .management-item p {
+            background-color: white;
+            padding: 15px;
+            margin: 0;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .management-item.active p {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .board-member {
+                width: 90%;
+                margin: 20px auto;
+            }
+
+            .report-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="WatsonsDevelopers Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="board.html">Board</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Board Section -->
+    <section class="board">
+        <h1>Meet the Leadership Team</h1>
+        <p>Get to know the co-founders and executive team behind WatsonsDevelopers, the pioneers in cutting-edge web and mobile app development.</p>
+        
+        <!-- Watson Wambugu - CEO -->
+        <div class="board-member">
+            <h2>Watson Wambugu</h2>
+            <img src="watson_wambugu_ceo.png" alt="Watson Wambugu - CEO">
+            <h3>Chief Executive Officer (CEO) & Founder</h3>
+            <p>Watson Wambugu, the visionary behind WatsonsDevelopers Group, founded the company in 2016. With over a decade of experience in web development, mobile applications, and AI-driven solutions, Watson leads the company’s strategic growth and innovation.</p>
+            <ul>
+                <li>5+ years in Software Engineering and Development</li>
+                <li>Expert in AI, Machine Learning, and Cloud Computing</li>
+                <li>Author and Public Speaker in the Tech Industry</li>
+                <li>Founded WatsonsDevelopers Group in 2016</li>
+            </ul>
+        </div>
+
+        <!-- Aimey Wangechi - CTO -->
+        <div class="board-member">
+            <h2>Aimey Wangechi</h2>
+            <img src="aimey.png" alt="Aimey - CTO">
+            <h3>Chief Technology Officer (CTO)</h3>
+            <p>Aimey Wangechi brings her technical expertise and deep knowledge of software architecture and systems engineering to WatsonsDevelopers.</p>
+            <ul>
+                <li>12+ years in Systems Engineering</li>
+                <li>Expert in Cloud Architecture and DevOps</li>
+                <li>Specialist in scalable web applications</li>
+                <li>Co-founder of WatsonsDevelopers Group</li>
+            </ul>
+        </div>
+
+        <!-- Maivey Ndiritu - COO -->
+        <div class="board-member">
+            <h2>Maivey Ndiritu</h2>
+            <img src="maivey.png" alt="Maivey - COO">
+            <h3>Chief Operations Officer (COO)</h3>
+            <p>Maivey Ndiritu ensures the smooth operation of WatsonsDevelopers, overseeing all day-to-day business activities.</p>
+            <ul>
+                <li>10+ years in Business Operations and Management</li>
+                <li>Specialist in business scaling and strategy</li>
+                <li>Co-founder of WatsonsDevelopers Group</li>
+            </ul>
+        </div>
+
+        <!-- Monicah Waithera - CFO -->
+        <div class="board-member">
+            <h2>Monicah Waithera</h2>
+            <img src="monicah_waithera_cfo.jpg" alt="Monicah Waithera - CFO">
+            <h3>Chief Financial Officer (CFO)</h3>
+            <p>Monicah Waithera oversees the financial operations of WatsonsDevelopers, ensuring financial health and growth.</p>
+            <ul>
+                <li>10+ years in Financial Management</li>
+                <li>Expert in Financial Strategy and Investment Planning</li>
+                <li>Co-founder of WatsonsDevelopers Group</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Founding Story Section -->
+    <section class="founding-story">
+        <h2>Our Founding Story</h2>
+        <p>WatsonsDevelopers Group was founded in 2016 with a mission to transform businesses through technology. What started as a small web development firm has since grown into a global technology solutions provider.</p>
+    </section>
+
+    <!-- Investments Section -->
+    <section class="investments">
+        <h2>Our Investments</h2>
+        <div class="investment-item">
+            <h4>Technology Infrastructure</h4>
+            <p>WatsonsDevelopers is committed to investing in cutting-edge technology infrastructure to drive innovation and improve efficiency.</p>
+        </div>
+        <div class="investment-item">
+            <h4>Research & Development</h4>
+            <p>Significant investments in R&D allow us to stay ahead of the curve in AI, cloud computing, and mobile application development.</p>
+        </div>
+        <div class="investment-item">
+            <h4>Employee Training</h4>
+            <p>We invest in continuous employee training to ensure our team remains highly skilled in the latest technology trends and tools.</p>
+        </div>
+    </section>
+
+    <!-- CSR Section -->
+    <section class="csr">
+        <h2>Corporate Social Responsibility</h2>
+        <div class="csr-content">
+            <p>WatsonsDevelopers is committed to giving back to the community. Our CSR initiatives focus on education, environmental sustainability, and bridging the digital divide in underserved regions.</p>
+        </div>
+    </section>
+
+    <!-- Reports Section -->
+    <section class="reports">
+        <h2>Annual Reports</h2>
+        <div class="reports-grid">
+            <div class="report-item">
+                <img src="report1.jpg" alt="Annual Report 2023">
+                <h3>Annual Report 2023</h3>
+            </div>
+            <div class="report-item">
+                <img src="report2.jpg" alt="Annual Report 2022">
+                <h3>Annual Report 2022</h3>
+            </div>
+            <div class="report-item">
+                <img src="report3.jpg" alt="Annual Report 2021">
+                <h3>Annual Report 2021</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Management and Governance Section -->
+    <section class="management">
+        <h2>Management & Governance</h2>
+        <div class="management-item">
+            <h4>Board Structure</h4>
+            <p>The board consists of highly experienced professionals who guide WatsonsDevelopers' strategic direction and ensure sound governance practices.</p>
+        </div>
+        <div class="management-item">
+            <h4>Corporate Governance Principles</h4>
+            <p>WatsonsDevelopers adheres to the highest standards of corporate governance, ensuring transparency, accountability, and ethical business conduct.</p>
+        </div>
+        <div class="management-item">
+            <h4>Risk Management</h4>
+            <p>We have implemented a comprehensive risk management framework to identify, assess, and mitigate potential risks to the organization.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2024 WatsonsDevelopers Group. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // FAQ Toggle
+        const managementItems = document.querySelectorAll('.management-item h4');
+        managementItems.forEach(item => {
+            item.addEventListener('click', () => {
+                item.parentElement.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

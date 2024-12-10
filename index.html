@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WatsonsDevelopers - Web and App Development Company. We offer web development, app development, consulting services, and much more.">
+    <meta name="keywords" content="web development, app development, consulting, software development, technology, WatsonsDevelopers">
+    <meta name="author" content="WatsonsDevelopers">
+    <title>WatsonsDevelopers - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+   <header>
+    <!-- Top Bar with Contact Information in Three Rows -->
+    <div class="header-top" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #f1f1f1; font-size: 14px; color: #333;">
+        <div class="logo" style="flex-shrink: 0;">
+            <img src="logo.png" alt="WatsonsDevelopers Logo" style="width: 150px;">
+        </div>
+
+        <div class="header-contact" style="display: flex; flex-direction: column; align-items: flex-end; text-align: right;">
+            <span><i class="fas fa-envelope" style="color: #007bff;"></i> <a href="mailto:info@watsonsdevelopers.com" style="text-decoration: none; color: #333;">info@watsonsdevelopers.com</a></span>
+            <span><i class="fab fa-whatsapp" style="color: #25D366;"></i> <a href="https://wa.me/254711503023" target="_blank" style="text-decoration: none; color: #333;">Chat with Us</a></span>
+            <span><i class="fas fa-phone-alt" style="color: #28a745;"></i> <a href="tel:+254711503023" style="text-decoration: none; color: #333;">+254 711 503023</a></span>
+        </div>
+    </div>
+
+    <!-- Navigation Bar with Moving Tagline and Social Icons -->
+    <div class="header-nav" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #333;">
+        <!-- Moving Tagline -->
+        <div class="moving-tagline-wrapper" style="flex-grow: 1; text-align: center;">
+            <span class="moving-tagline" style="font-size: 14px; color: #fff;">| Innovating Your Digital Presence | Building the Future of Technology |</span>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="header-social-icons" style="display: flex; gap: 15px;">
+            <a href="#"><i class="fab fa-facebook-f" style="color: #3b5998; font-size: 20px;"></i></a>
+            <a href="#"><i class="fab fa-twitter" style="color: #1DA1F2; font-size: 20px;"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in" style="color: #0077b5; font-size: 20px;"></i></a>
+        </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav style="background-color: #555; padding: 10px 20px;">
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px; justify-content: center;">
+            <li><a href="index.html" style="color: white; text-decoration: none; font-weight: bold;">Home</a></li>
+            <li><a href="services.html" style="color: white; text-decoration: none; font-weight: bold;">Services</a></li>
+            <li><a href="portfolio.html" style="color: white; text-decoration: none; font-weight: bold;">Portfolio</a></li>
+            <li><a href="blog.html" style="color: white; text-decoration: none; font-weight: bold;">Blog</a></li>
+            <li><a href="shop.html" style="color: white; text-decoration: none; font-weight: bold;">Shop</a></li>
+            <li><a href="board.html" style="color: white; text-decoration: none; font-weight: bold;">Board</a></li>
+            <li><a href="contact.html" style="color: white; text-decoration: none; font-weight: bold;">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-overlay"></div> <!-- Background overlay for better contrast -->
+    <div class="hero-content">
+        <h1>Welcome to WatsonsDevelopers</h1>
+        <p>Your one-stop solution for web development, app development, AI integration, Cloud Computing, and consultancy services.</p>
+        <a href="services.html" class="btn">Explore Our Services</a>
+    </div>
+</section>
+<style>
+    .header-top {
+        background-color: #f1f1f1;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.9rem;
+    }
+
+    .header-contact a {
+        color: #007bff;
+        text-decoration: none;
+        margin-left: 10px;
+    }
+
+    .header-contact a:hover {
+        text-decoration: underline;
+    }
+
+    .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full screen height */
+    background-image: url('mainbackground.png'); /* Ensure this is the correct path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+/* Check for correct path and debug with a solid color */
+.hero {
+    background-color: #007bff; /* Fallback color in case the image doesn't load */
+}
+
+/* Overlay for better text contrast */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1; /* Sits behind text but over the background image */
+}
+
+/* Style for the hero content */
+.hero-content {
+    position: relative; /* Stays above the overlay */
+    z-index: 2;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style for the text inside the hero section */
+.hero-content h1 {
+    font-size: 4rem; /* Larger font size for the heading */
+    font-weight: bold; /* Make the text bold */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Add shadow for better contrast */
+    margin-bottom: 20px;
+}
+
+/* Hero description paragraph */
+.hero-content p {
+    font-size: 1.5rem; /* Increase the size of the description */
+    line-height: 1.8; /* Better line spacing */
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto 20px; /* Center the text with margin */
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7); /* Add shadow for better contrast */
+}
+
+/* Hero button styling */
+.hero-content a.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem; /* Increase button text size */
+    color: white;
+    background-color: #007bff; /* Adjust button color */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Button shadow for emphasis */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hero button hover effect */
+.hero-content a.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-3px); /* Subtle hover movement */
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .hero-content h1 {
+        font-size: 3rem; /* Adjusted for tablet screens */
+    }
+
+    .hero-content p {
+        font-size: 1.3rem;
+    }
+
+    .hero-content a.btn {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 80vh; /* Reduce hero height for smaller screens */
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem; /* Smaller font size for mobile */
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .hero-content a.btn {
+        font-size: 1rem;
+    }
+}
+</style>
+
+<!-- Services Section -->
+<section class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+        <!-- Web Development Service -->
+        <div class="service-card">
+            <div class="service-icon">
+                <img src="path-to-web-development-icon.png" alt="Web Development">
+            </div>
+            <div class="service-details">
+                <h3>Web Development</h3>
+    
+                <a href="services.html#web-development" class="btn-service">Learn More</a>
+            </div>
+        </div>
+
+        <!-- App Development Service -->
+        <div class="service-card">
+            <div class="service-icon">
+                <img src="path-to-app-development-icon.png" alt="App Development">
+            </div>
+            <div class="service-details">
+                <h3>App Development</h3>
+            
+                <a href="services.html#app-development" class="btn-service">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Consultancy Service -->
+        <div class="service-card">
+            <div class="service-icon">
+                <img src="path-to-consulting-icon.png" alt="Consultancy">
+            </div>
+            <div class="service-details">
+                <h3>Consultancy</h3>
+               
+                <a href="services.html#consultancy" class="btn-service">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Cloud Computing Service -->
+        <div class="service-card">
+            <div class="service-icon">
+                <img src="path-to-cloud-icon.png" alt="Cloud Computing">
+            </div>
+            <div class="service-details">
+                <h3>Cloud Computing</h3>
+               
+                <a href="services.html#cloud-computing" class="btn-service">Learn More</a>
+            </div>
+        </div>
+
+        <!-- API Integration Service -->
+        <div class="service-card">
+            <div class="service-icon">
+                <img src="path-to-api-icon.png" alt="API Integration">
+            </div>
+            <div class="service-details">
+                <h3>API Integration</h3>
+               
+                <a href="services.html#api-integration" class="btn-service">Learn More</a>
+            </div>
+        </div>
+
+         <!-- Data Anakytics Service -->
+        <div class="service-card">
+            <div class="service-icon">
+                <img src="path-to-data-analytics.png" alt="Data Analytics">
+            </div>
+            <div class="service-details">
+                <h3>Data Analytics</h3>
+               
+                <a href="services.html#data-analytics" class="btn-service">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- Portfolio Section -->
+<section style="background-color: #f7f7f7; padding: 60px 20px; text-align: center;">
+    <h2 style="font-size: 2.8rem; color: #333; margin-bottom: 20px;">Our Work</h2>
+    <p style="font-size: 1.2rem; color: #666; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+        Explore some of our featured projects, crafted with precision and passion to bring the best solutions to our clients.
+    </p>
+    
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px; max-width: 1200px; margin-left: auto; margin-right: auto;">
+        <!-- Project 1 -->
+        <div style="background-color: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: calc(33% - 20px); overflow: hidden; transition: transform 0.3s ease;">
+            <div style="overflow: hidden;">
+                <img src="project1.png" alt="E-Commerce Website" style="width: 100%; height: auto; display: block; transition: transform 0.3s ease;">
+            </div>
+            <div style="padding: 20px;">
+                <h3 style="font-size: 1.8rem; color: #007bff; margin-bottom: 10px;">E-Commerce Website</h3>
+                <p style="font-size: 1rem; color: #555; margin-bottom: 20px;">Crafted a seamless e-commerce platform with integrated payment gateways for smooth transactions.</p>
+                <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; font-size: 1rem; text-decoration: none; border-radius: 5px;">View Project</a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div style="background-color: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: calc(33% - 20px); overflow: hidden; transition: transform 0.3s ease;">
+            <div style="overflow: hidden;">
+                <img src="project2.png" alt="Business App" style="width: 100%; height: auto; display: block; transition: transform 0.3s ease;">
+            </div>
+            <div style="padding: 20px;">
+                <h3 style="font-size: 1.8rem; color: #007bff; margin-bottom: 10px;">Business App</h3>
+                <p style="font-size: 1rem; color: #555; margin-bottom: 20px;">Developed a powerful business application streamlining customer and inventory management.</p>
+                <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; font-size: 1rem; text-decoration: none; border-radius: 5px;">View Project</a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div style="background-color: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: calc(33% - 20px); overflow: hidden; transition: transform 0.3s ease;">
+            <div style="overflow: hidden;">
+                <img src="project3.png" alt="Corporate Website" style="width: 100%; height: auto; display: block; transition: transform 0.3s ease;">
+            </div>
+            <div style="padding: 20px;">
+                <h3 style="font-size: 1.8rem; color: #007bff; margin-bottom: 10px;">Corporate Website</h3>
+                <p style="font-size: 1rem; color: #555; margin-bottom: 20px;">A robust corporate website built to drive engagement and present a professional brand identity.</p>
+                <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; font-size: 1rem; text-decoration: none; border-radius: 5px;">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <a href="portfolio.html" style="display: inline-block; padding: 15px 30px; margin-top: 40px; background-color: #28a745; color: white; font-size: 1.2rem; text-decoration: none; border-radius: 5px;">View Full Portfolio</a>
+</section>
+
+<!-- Additional Inline Styles for Hover Effects -->
+<style>
+    .portfolio-item:hover img {
+        transform: scale(1.1);
+    }
+    .portfolio-item:hover {
+        transform: translateY(-5px);
+    }
+</style>
+
+
+  <!-- Newsletter Section -->
+<section style="background-color: #f7f7f7; padding: 50px 20px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px; margin: 40px 0;">
+    <div style="max-width: 600px; margin: 0 auto;">
+        <h2 style="font-size: 2.5rem; color: #333; margin-bottom: 10px;">Subscribe to Our Newsletter</h2>
+        <p style="font-size: 1.1rem; color: #666; margin-bottom: 20px;">Get the latest updates, news, and offers directly in your inbox.</p>
+        <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+            <input type="hidden" name="form-name" value="newsletter">
+            <input type="email" name="email" placeholder="Enter your email" required style="padding: 15px; font-size: 1rem; border-radius: 5px; border: 1px solid #ddd; width: 70%; max-width: 400px; transition: border 0.3s ease;">
+            <button type="submit" style="padding: 15px 30px; background-color: #007bff; color: white; font-size: 1rem; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease;">Subscribe</button>
+            <div style="display:none;">
+                <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+            </div>
+        </form>
+    </div>
+</section>
+
+    <!-- Footer with FAQ Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="faq.html">FAQ</a></li> <!-- Added FAQ link -->
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+           <div class="footer-social">
+    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+    <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+</div>
+
+
+        <div class="faq-section"> <!-- FAQ Section -->
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-item">
+                <h4>How do I get started with a project?</h4>
+                <p>You can start by contacting us via the contact page or filling out the form with your project details, and we will get back to you with a proposal.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What services do you offer?</h4>
+                <p>We offer a variety of services including web development, mobile app development, consultancy, cloud computing, AI integration, and e-commerce solutions.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Can you provide maintenance for my website?</h4>
+                <p>Yes, we provide ongoing maintenance and support for all projects we develop, as well as other existing websites.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 WatsonsDevelopers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back-to-Top Button -->
+    <button class="back-to-top" style="display: none;">⬆️ Back to Top</button>
+
+    <script>
+        // Smooth scrolling for back-to-top button
+        const backToTopBtn = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+
+        backToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+ <script src="script.js"></script>
+</body>
+</html>
